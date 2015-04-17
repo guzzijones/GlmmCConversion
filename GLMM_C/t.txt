@@ -1,0 +1,120 @@
+
+Your inputs:
+Y from the input file ./testdata/y.csv
+X (fixed design matrix) from the input file ./testdata/x.csv
+Z (design matrix) from 3 files: ./testdata/z1.csv,./testdata/z2.csv,./testdata/z3.csv
+G (covariance structure matrix) from 3 files: ./testdata/g1.csv,./testdata/g2.csv,./testdata/g3.csv
+E (residual design matrix) from ./testdata/r.csv
+Results will be output into output.txt
+Running REML to solve GLMM...
+y file: ./testdata/y.csv
+
+Computing status with REML:
+Total number of entries in Y: 1659
+Number of fixed effects in X: 85
+Number of random groups: 3
+	Number of random variables in group 0(./testdata/z1.csv): 20	Number of random variables in group 1(./testdata/z2.csv): 372	Number of random variables in group 2(./testdata/z3.csv): 968
+herex rows: 1659
+x cols: 85
+this: rows: 1659cols: 85
+result: rows: 85cols: 1659
+done w transpose
+xt rows: 85
+xt cols: 1659
+doing mult X
+x rows: 1659
+x cols: 85
+this rows: 85 cols: 1659
+rhs rows: 1659 cols: 85
+
+doing mult Y
+this rows: 85 cols: 1659
+rhs rows: 1659 cols: 1
+
+done
+done w solve
+1659
+22
+18
+15
+14
+16
+15
+16
+89
+13
+19
+20
+20
+18
+17
+15
+16
+17
+20
+24
+15
+16
+70
+65
+60
+30
+22
+26
+27
+15
+20
+24
+17
+18
+21
+18
+21
+26
+34
+16
+90
+88
+23
+36
+32
+36
+20
+27
+24
+19
+16
+27
+24
+13
+34
+80
+89
+71
+31
+87
+14
+35
+40
+17
+24
+29
+21
+141
+37
+42
+55
+87
+31
+30
+20
+39
+14
+26
+23
+19
+15
+16
+17
+14
+17

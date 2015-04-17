@@ -1,0 +1,38 @@
+###########
+#add new depend files below 
+#add new ones here object files relating to .cpp files
+DEPS=driver.o LDLT.o LUDcomposition.o QRDcomposition.o FileIOHelper.o JArray.o MatrixReader.o Glmm.o GlmmEngine.o\
+
+EXE=driver
+
+#######################
+#DO NOT EDIT BELOW
+#######################
+
+###########
+#variables
+###########
+CC=g++
+CPPFLAGS= -Wall -c -I./include/
+CPPFLAGS+= -MD -MP -std=c++0x -O3 -DNDEBUG -ftree-vectorize
+LFLAGS= -Wall 
+VPATH=src
+
+all: $(EXE)
+
+debug: CC+= -DDEBUG -g
+debug: $(EXE)
+###########
+#linker
+###########
+$(EXE): $(DEPS)
+	$(CC) $(LFLAGS) $(DEPS) -o $(EXE).exe
+
+##########
+#implicit calls for all object file builds
+#########
+
+###########
+#include dependency files 
+###########
+-include $(DEPS:%.o=%.d)

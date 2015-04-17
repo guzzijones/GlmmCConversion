@@ -1,0 +1,1 @@
+./driver.exe -y ./testdata/y.csv -f ./testdata/x.csv -r ./testdata/z1.csv:./testdata/z2.csv:./testdata/z3.csv -g ./testdata/g1.csv:./testdata/g2.csv:./testdata/g3.csv -e ./testdata/r.csv -o output.txt
